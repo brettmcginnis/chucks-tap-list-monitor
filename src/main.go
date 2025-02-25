@@ -9,6 +9,11 @@ func main() {
 	fmt.Println("Hello, world!")
 	beers := site.GreenWood.List()
 
+	//url := os.Getenv("SLACK_WEBHOOK")
+	//if url == "" {
+	//	return fmt.Errorf("SLACK_WEBHOOK environment variable not set")
+	//}
+
 	for _, beer := range beers {
 		fmt.Printf("beer %d:\n", beer.Tap)
 		fmt.Printf("  beer: %s\n", beer.Beer)
