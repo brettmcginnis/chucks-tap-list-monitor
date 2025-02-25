@@ -1,0 +1,8 @@
+name: Scheduled Workflow
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
